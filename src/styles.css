@@ -1,38 +1,89 @@
+/* CSS Styling page */
+
 .App {
-  text-align: center;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: url("../public/images/background.jpg") no-repeat center center
+    fixed;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.startExamButton {
+  width: 60px;
+  height: 30px;
+  left: 50%;
+  background-color: antiquewhite;
+  margin-right: 20px;
+  margin-left: 40%;
+  margin: 0;
+  position: absolute;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.modal-overlay {
+  z-index: 9999;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.modal-box {
+  display: block;
+  padding: 1rem;
+  background: white;
+  width: 70%;
+  height: 70%;
+  border-radius: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.prev_btn {
+  width: 60px;
+  height: 30px;
+  background-color: antiquewhite;
+  margin-right: 20px;
+  margin-left: 40%;
+}
+.next_btn {
+  width: 60px;
+  height: 30px;
+  background-color: lightgreen;
+}
+
+.footer_btn {
+  margin-top: 35%;
+}
+
+.actual_content {
+  padding-left: 50px !important;
+  padding-top: 30px !important;
+}
+
+.question {
+  padding-bottom: 15px;
+}
+
+.ans_section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: larger;
+}
+
+.answers {
+  padding-left: 30%;
 }

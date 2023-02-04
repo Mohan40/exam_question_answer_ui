@@ -3,14 +3,13 @@
   "name": "exam_question_answer_ui",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "images/favicon.ico",
       "sizes": "16x16",
       "type": "image/x-icon"
     },
     {
-      "src": ".../srcpng",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "images/background.jpg",
+      "type": "image/jpg"
     }
   ],
   "start_url": ".",
